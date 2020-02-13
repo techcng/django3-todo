@@ -1,0 +1,59 @@
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+
+<style type="text/css">
+	input{
+			width: 560;
+			padding: 12px 20px;
+			margin: 8px 0;
+			box-sizing: border-box;
+			text-align: center;
+		}
+				.center-column{
+			width: 600px;
+			margin: 20px auto;
+			padding: 20px;
+			background-color: #fff;
+			border-radius: 3px;
+			box-shadow: 6px 2px 30px 0px rgba(0,0,0,0.75);
+		}
+	
+		body{
+			background-color: #568962;
+		}
+
+
+		h2{
+			width: 400px;
+			margin: 20px auto;
+			padding: 20px;
+			background-color: #bd66ff;
+			text-align: center;
+			border-radius: 8px;
+			box-shadow: 6px 2px 30px 0px rgba(0,0,0,0.75);
+		}
+
+	</style>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Update task from todo</title>
+</head>
+<body>
+
+
+<div class="center-column" >
+<h2>Update task</h2>
+
+<form method="POST" action="">
+
+	{% csrf_token %}
+	{{ form.title }}
+	<input class="btn btn-info" type="submit" name="Update Task">
+</form>
+</div>
+
+</body>
+</html>
